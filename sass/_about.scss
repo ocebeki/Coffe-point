@@ -1,0 +1,38 @@
+.about {
+    margin: 10% 12%;
+    text-align: center;
+    @media (max-width: 911px) {
+        margin: 18px 1%;
+    }
+    
+    &__top {
+        img {
+            width: 100%;
+        }
+    }
+    
+    &__bottom {
+        margin: -5% 15%;
+        position: relative;
+        text-align: left;
+        padding: 4% 3%;
+        @include border-radius(10px);
+        @media (max-width: 911px) {
+            margin: -5% 7%;
+        }
+        
+        h4,
+        h2 {
+            @media (max-width: 911px) {
+                font-size: 22px;
+                text-align: center;
+            }
+        }
+        
+        p {
+            @media (max-width: 911px) {
+                text-align: justify;
+            }
+        }
+    }
+}

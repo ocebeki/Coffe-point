@@ -1,0 +1,67 @@
+.store {
+    background-color: rgba(230, 167, 86, .9);
+    text-align: center;
+    clear: both;
+    margin-top: 150px;
+    margin-bottom: 54px;
+    padding-bottom: 80px;
+    @media (max-width: 1086px) {
+        margin-top: 20px;
+    }
+    .opening-hours {
+        margin: auto;
+        width: 60%;
+        padding-top: 60px;
+        h4 {
+            padding-top: 40px;
+            @media (max-width: 660px) {
+                padding-top: 32px;
+                padding-bottom: 10px;
+            }
+        }
+        &__days {
+            float: left;
+        }
+        &__hours {
+            float: right;
+            margin-right: -28px;
+        }
+        @media (max-width: 1086px) {
+            width: 75%;
+        }
+        @media (max-width: 660px) {
+            width: 93%;
+        }
+    }
+    .list-hours {
+        padding: 0 22%;
+        @media (max-width: 800px) {
+            padding: 0 10%;
+        }
+        @media (max-width: 660px) {
+            padding: 0 5%;
+        }
+        li {
+            padding: 29px;
+            padding-left: 0px;
+            border-bottom: solid 1px rgba(230, 167, 86, .9);
+        }
+        .today {
+            color: rgba(230, 167, 86, .9);
+            font-weight: bold;
+        }
+    }
+    .store-bottom {
+        margin-top: 40px;
+        padding-bottom: 40px;
+        :first-child {
+            font-weight: bold;
+        }
+        :nth-child(2) {
+            margin-top: 30px;
+        }
+        p {
+            width: 100%;
+        }
+    }
+}

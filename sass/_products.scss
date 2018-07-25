@@ -1,0 +1,53 @@
+.products {
+    margin-top: 30px;
+    padding: 0 5%;
+    &__wrapper {
+        img {
+            margin: -10% 15%;
+            overflow: hidden;
+            width: 70%;
+            @media (max-width: 1086px) {
+                margin: auto;
+                width: 100%
+            }
+        }
+    }
+    .short {
+        width: 40%;
+        padding: 2% 0.8%;
+        position: relative;
+        text-align: center;
+        @include border-radius(10px);
+        @media (max-width: 1086px) {
+            width: 100%;
+            clear: both
+        }
+    }
+    .long {
+        width: 52%;
+        padding: 2%;
+        position: relative;
+        text-align: center;
+        @include border-radius(10px);
+        @media (max-width: 1086px) {
+            width: 100%;
+            clear: both;
+        }
+    }
+    .right {
+        float: right;
+        margin: 10px 0;
+    }
+    .left {
+        float: left;
+        margin: 10px 0;
+    }
+    .bottom {
+        @media (max-width: 1086px){
+            margin-top: -11px;
+        }
+    }
+    .margin {
+        margin-right: 300px;
+    }
+}

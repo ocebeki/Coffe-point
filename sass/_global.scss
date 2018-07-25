@@ -1,0 +1,49 @@
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+body {
+    background: linear-gradient(rgba(47, 23, 15, .65), rgba(47, 23, 15, .65)), url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Lora', serif;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+h4 {
+    font-weight: bold;
+    font-size: 25px;
+}
+h2 {
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+p {
+    line-height: 1.75;
+}
+.bg-white {
+    background-color: rgba(255, 255, 255, .85);
+}
+.bg-brown {
+    background-color: rgba(230, 167, 86, .9);
+}
+.border {
+    border: solid 4px rgba(255, 255, 255, 0.85);
+    box-sizing: content-box;
+    padding: 5px;
+    @include border-radius(10px);
+}
+img {
+    @include border-radius(5px);
+}

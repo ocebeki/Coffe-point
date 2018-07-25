@@ -1,0 +1,35 @@
+.home-bottom {
+    padding: 8% 17%;
+    @media (max-width: 1086px) {
+        padding: 13% 8%;
+
+    }
+    .home-bottom-content {
+        @include border-radius(10px);
+        border: 2px solid white;
+        text-align: center;
+        padding: 67px;
+        @media (max-width: 530px) {
+            
+            text-align: center;
+            padding: 55px 10px;
+        }
+    }
+    
+    h4 {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 3em;
+        padding-bottom: 20px;
+    }
+    
+    h4, h2 {
+        @media (max-width: 530px) {
+            
+            text-align: center;
+        }
+    }
+}
+
+

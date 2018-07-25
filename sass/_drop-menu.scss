@@ -1,0 +1,20 @@
+ .drop-menu {
+     position: absolute;
+     top: 7px;
+     right: 20px;
+     width: 48px;
+     cursor: pointer;
+     display: none;
+     @media (max-width: 1086px) {
+         display: block;
+     }
+     
+     img {
+         width: 80%;
+     }
+     p{
+         margin-top: -8px;
+    font-size: 14px;
+         color: #e6a756;
+     }
+ }
